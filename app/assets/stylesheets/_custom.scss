@@ -611,8 +611,17 @@ p {
 	justify-content: center;
 }
 
+.t-width {
+	max-width: 800px;
+	min-width: 400px;
+}
+
 #root {
+	display: flex;
+	flex-direction: column;
 	height: calc(100vh - 90px);
+	align-items: center;
+	justify-items: center;
 }
 
 .app-footer {
