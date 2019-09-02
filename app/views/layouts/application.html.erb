@@ -10,6 +10,47 @@
   </head>
 
   <body>
+    <div class="navbar-dark bg-dark outer-navbar">
+      <nav class="navbar inner-navbar-toggle">
+        <%= link_to 'Home', root_path, :class => "navbar-brand" %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item btn" >
+              <%= link_to 'Books', books_path, :class => "nav-link" %>
+            </li>
+            <li class="nav-item btn" >
+              <%= link_to 'Authors', authors_path, :class => "nav-link" %>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar inner-navbar navbar-nav">
+        <%= link_to 'Home', root_path, :class => "navbar-brand" %>
+          <button class="nav-item btn" >
+            <%= link_to 'Books', books_path, :class => "nav-link" %>
+          </button>
+          <button class="nav-item btn" >
+            <%= link_to 'Authors', authors_path, :class => "nav-link" %>
+          </button>
+      </nav>
+    </div>
+
+    <!-- Call APP -->
     <%= yield %>
+
+    <!-- Change Toggle -->
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+		$(function () {
+		  $('[data-toggle="popover"]').popover()
+		})
+	</script>
   </body>
 </html>

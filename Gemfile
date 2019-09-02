@@ -61,4 +61,16 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+##########################################################################
+################################ ADDED ###################################
+##########################################################################
+
+# Gem for MongoDB
 gem 'mongoid', '~> 7.0.4'
+
+# Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+
+# JQuery for Bootstrap to work
+gem 'jquery-rails'
