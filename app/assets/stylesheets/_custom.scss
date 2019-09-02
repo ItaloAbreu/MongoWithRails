@@ -611,6 +611,17 @@ p {
 	justify-content: center;
 }
 
+#root {
+	height: calc(100vh - 90px);
+}
+
+.app-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+
 @media (max-width: 600px) {
 	.inner-navbar-toggle {
 		display: flex;

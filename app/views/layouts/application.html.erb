@@ -31,17 +31,26 @@
       </nav>
       <nav class="navbar inner-navbar navbar-nav">
         <%= link_to 'Home', root_path, :class => "navbar-brand" %>
-          <button class="nav-item btn" >
-            <%= link_to 'Books', books_path, :class => "nav-link" %>
-          </button>
-          <button class="nav-item btn" >
-            <%= link_to 'Authors', authors_path, :class => "nav-link" %>
-          </button>
+        <button class="nav-item btn" >
+          <%= link_to 'Books', books_path, :class => "nav-link" %>
+        </button>
+        <button class="nav-item btn" >
+          <%= link_to 'Authors', authors_path, :class => "nav-link" %>
+        </button>
       </nav>
     </div>
 
     <!-- Call APP -->
-    <%= yield %>
+    <div id="root">
+      <%= yield %>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer bg-dark">
+      <a class="btn btn-dark" href="https://github.com/italoabreu" target="_blank">
+        On Github
+      </a>
+    </footer>
 
     <!-- Change Toggle -->
 	<script>
