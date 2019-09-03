@@ -1,10 +1,10 @@
 development:
   clients:
     default:
-      uri: <%= "#{ENV['MONGOID_ENV']}" %>
-      # database: mongo_app_development
-      # hosts:
-      #   - localhost:27017
+      # uri: <%= "#{ENV['MONGOID_ENV']}" %>
+      database: mongo_app_development
+      hosts:
+        - localhost:27017
       options:
 
   options:
@@ -12,10 +12,10 @@ development:
 test:
   clients:
     default:
-      uri: <%= "#{ENV['MONGOID_ENV']}" %>
-      # database: mongo_app_test
-      # hosts:
-      #   - localhost:27017
+      # uri: <%= "#{ENV['MONGOID_ENV']}" %>
+      database: mongo_app_test
+      hosts:
+        - localhost:27017
       options:
         read:
           mode: :primary
@@ -24,10 +24,10 @@ test:
 production:
   clients:
     default:
-      uri: <%= "#{ENV['MONGOID_ENV']}" %>
-      # database: mongo_app_production
-      # hosts:
-      #   - localhost:27017
+      # uri: <%= "#{ENV['MONGOID_ENV']}" %>
+      database: mongo_app_production
+      hosts:
+        - localhost:27017
       options:
 
   options:
