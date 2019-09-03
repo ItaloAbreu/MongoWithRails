@@ -71,6 +71,7 @@ gem 'mongoid', '~> 7.0.4'
 
 # Bootstrap
 gem 'bootstrap', '~> 4.3.1'
+gem "bootstrap_form"
 
 # JQuery for Bootstrap to work
 gem 'jquery-rails'

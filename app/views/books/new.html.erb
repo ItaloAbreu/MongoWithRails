@@ -1,5 +1,8 @@
+<p id="notice"><%= notice %></p>
+
 <h1>New Book</h1>
 
-<%= render 'form', book: @book %>
-
-<%= link_to 'Back', books_path %>
+<section class="t-width">
+    <%= render 'form', book: @book %>
+    <%= link_to 'Back', books_path, :class => 'btn btn-outline-dark btn-lg btn-block' %>
+</section>
