@@ -14,5 +14,5 @@
     <%= form.text_field :name %>
     <%= form.text_field :publisher %>
     <%= form.collection_select(:author_id, Author.all, :id, :name) %>
-    <%= form.primary "New", :class => 'btn btn-dark btn-lg btn-block t-width' %>
+    <%= form.primary "OK", :class => 'btn btn-dark btn-lg btn-block t-width' %>
 <% end %>
