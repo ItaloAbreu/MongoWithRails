@@ -1,24 +1,24 @@
 <section class="card-container">
   <div class="card text-white bg-dark card-min-size">
     <div class="card-body">
-      <h3 class="card-header text-center">Book</h3>
 
-      <h5 class="card-title">
+      <h5 class="card-header text-center text-uppercase">Book</h5>
+
+      <h4 class="card-title text-center">
         <%= @book.name %>
-      </h5>
+      </h4>
 
       <p class="card-text">
+        <strong>Author:</strong>
+        <%= @book.author.name %><br>
         <strong>Publisher:</strong>
         <%= @book.publisher %>
       </p>
 
-      <p class="card-text">
-        <strong>Author:</strong>
-        <%= @book.author.name %>
-      </p>
-
-      <%= link_to 'Back', books_path, :class => 'btn btn-outline-light my-2 my-sm-0' %>
-      <%= link_to 'Edit', edit_book_path(@book), :class => 'btn btn-outline-light my-2 my-sm-0' %>
+      <div class="d-flex justify-content-center">
+        <%= link_to 'Back', books_path, :class => 'btn btn-outline-light my-2 my-sm-0 mr-3 ml-3' %>
+        <%= link_to 'Edit', edit_book_path(@book), :class => 'btn btn-outline-light my-2 my-sm-0 mr-3 ml-3' %>
+      </div>
     </div>
   </div>
 </section>
